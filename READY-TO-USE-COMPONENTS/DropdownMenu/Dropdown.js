@@ -6,11 +6,6 @@ import * as FiIcons from "react-icons/fi";
 function Dropdown(props) {
   const [openMenu, setOpenMenu] = useState(false);
 
-  const openedMenuClass =
-    "bg-white shadow-xl rounded-md transition-all duration-200 border-[1.4px] border-gray-200 w-64 absolute top-12";
-  const closedMenuClass =
-    "bg-white shadow-xl opacity-0 pointer-events-none transition-all -translate-y-10 duration-200 rounded-md border-[1.4px] border-gray-200 w-64 absolute top-12";
-
   return (
     <div className="relative flex select-none w-[7.6rem] justify-end">
       <div
@@ -25,7 +20,11 @@ function Dropdown(props) {
           <FiIcons.FiChevronRight className="text-xl" />
         )}
       </div>
-      <div className={openMenu ? openedMenuClass : closedMenuClass}>
+      <div
+        className={`${
+          openMenu ? null : "opacity-0 pointer-events-none -translate-y-10"
+        } bg-white shadow-xl rounded-md transition-all  duration-200 border-[1.4px] border-gray-200 w-64 absolute top-12`}
+      >
         {props.list.map((item, index) => {
           return (
             <>
