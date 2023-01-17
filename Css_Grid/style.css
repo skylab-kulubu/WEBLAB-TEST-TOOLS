@@ -1,0 +1,27 @@
+/* Grid container */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 16px;
+  }
+  
+  /* Grid items */
+  .grid-item {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 16px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

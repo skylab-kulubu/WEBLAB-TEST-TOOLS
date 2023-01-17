@@ -1,0 +1,2 @@
+Bu sistemde, tüm içerik 4 sütunda düzenlenmiştir ve sütunlar arasında eşit aralıklar vardır. Grid öğelerinin boyutları ve pozisyonları media sorguları kullanılarak değiştirilebilir.
+Bu örnekte, grid container olarak class="grid" kullanılmıştır ve içindeki her öğe için class="grid-item" kullanılmıştır. Bu kodları kullanarak hazır bir grid sistemi oluşturdum.
